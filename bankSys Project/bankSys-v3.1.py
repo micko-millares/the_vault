@@ -1,4 +1,4 @@
-# Object-oriented programming; Bank Account, Single User (VERSION 3.1)
+# Object-oriented programming; Bank Account, Single User (VERSION 3.1.0)
 # Changelog/Planned Changes
 # Functions fail-proofed, invalid inputs rejected and function is looped until valid input
 # Program is now persistent. Will loop on current running iteration until exited. Values during that session are also cached
