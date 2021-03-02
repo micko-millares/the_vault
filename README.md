@@ -8,4 +8,5 @@ Random python math, inspired by Racket code examples...
 ### GUI Project (WIP)
 .py files for various GUIs. Currently working on integrating GUIs with my bankSys project in conjunction with PyQt5
 ### bankSys Project (WIP)
-Contains all versions of my bankSys project. Current version: v3.1.0
+Contains all versions of my bankSys project. Current version: v3.1.0  
+All iterations require the 'Colorama' module, will be pushing non-colorama versions eventually...
