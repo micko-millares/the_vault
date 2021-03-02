@@ -8,10 +8,10 @@ import time
 def on_press(key):
     if key == Key.left:
         playsound("dot_600.wav")
-        print('.')
+        #print('.')
     elif key == Key.right:
         playsound("dash_600.wav")
-        print('-')
+        #print('-')
         #playsound("morse_dash.mp3")
 
 def on_release(key):
