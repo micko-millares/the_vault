@@ -1,22 +1,44 @@
 # v 0.1, Keyboard-to-morse
 #Imports
-from pynput import keyboard
+#import keyboard
+from pynput.keyboard import Key, Listener
 from playsound import playsound
 import time
 
+def on_press(key):
+    if key == Key.left:
+        print('.')
+        playsound("click.mp3")
+    elif key == Key.right:
+        print('-')
+        #playsound("morse_dash.mp3")
+
 def on_release(key):
-     time_elapsed = round(time.time() -t, 3)
-     print(key, "was depressed for", time_elapsed, "seconds")
-    
+    if key == Key.esc:
+        print('Terminating...')
+        time.sleep(0.5)
+        return False
+
+with Listener(
+        on_press=on_press,
+        on_release=on_release) as listener:
+    listener.join()
+
+""" from pynput.keyboard import Key, Listener
 
 def on_press(key):
-    return False
+    print('{0} pressed'.format(
+        key))
 
-with keyboard.Listener(on_press=on_press) as press_listener:
-    press_listener.join()
+def on_release(key):
+    print('{0} release'.format(
+        key))
+    if key == Key.esc:
+        # Stop listener
+        return False
 
-t = time.time()
-
-with keyboard.Listener(on_release = on_release) as release_listener:
-    release_listener.join()
-
+# Collect events until released
+with Listener(
+        on_press=on_press,
+        on_release=on_release) as listener:
+    listener.join() """
