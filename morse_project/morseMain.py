@@ -7,9 +7,10 @@ import time
 
 def on_press(key):
     if key == Key.left:
-        print('.')
         playsound("click.mp3")
+        print('.')
     elif key == Key.right:
+        playsound("click.mp3")
         print('-')
         #playsound("morse_dash.mp3")
 
