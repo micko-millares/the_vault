@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     # Objects
     tones = {
-        pygame.K_q: tone(60)
+        pygame.K_DOWN: tone(60)
     }
 
     # Main loop
