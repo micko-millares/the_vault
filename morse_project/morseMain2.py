@@ -24,14 +24,14 @@ class tone(pygame.mixer.Sound):
 
 if __name__ == "__main__":
     # Function drivers/init
-    pygame.mixer.pre_init(400, -16, 1, 1024)
+    pygame.mixer.pre_init(20000, -16, 1, 512)
     pygame.init()
 
     screen = pygame.display.set_mode((100, 100))
 
     # Objects
     tones = {
-        pygame.K_DOWN: tone(60)
+        pygame.K_KP_ENTER: tone(67)
     }
 
     # Main loop
@@ -45,13 +45,13 @@ if __name__ == "__main__":
     #keyPress
             elif event.type == pygame.KEYDOWN:
                  if event.key in tones:
-                    print('Press:', event.key)
+                    #print('Press:', event.key)
                     tones[event.key].play(-1)
 
      #keyRelease
             elif event.type == pygame.KEYUP:
                  if event.key in tones:
-                    print('Press:', event.key)
+                    #print('Press:', event.key)
                     tones[event.key].stop()
 
 pygame.quit()
