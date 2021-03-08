@@ -24,14 +24,14 @@ class tone(pygame.mixer.Sound):
 
 if __name__ == "__main__":
     # Function drivers/init
-    pygame.mixer.pre_init(9000, -16, 2, 256)
+    pygame.mixer.pre_init(9500, -16, 2, 256)
     pygame.init()
 
     screen = pygame.display.set_mode((100, 100))
 
     # Objects
     tones = {
-        pygame.K_KP_ENTER: tone(65)
+        pygame.K_KP_ENTER: tone(70)
     }
 
     # Main loop
