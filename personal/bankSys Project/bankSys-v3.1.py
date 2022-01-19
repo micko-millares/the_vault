@@ -97,7 +97,7 @@ while debounce == True:
         input(
             "\nType 'deposit' to deposit funds, 'withdraw' for withdrawals, 'display' to view available funds, 'exit' to exit terminal \n"
         )
-    ).lower()  # converts every character in userInput regardless of how user typed out response (i.e DePosIt would be come deposit), thx mike
+    ).lower()  # converts every character in userInput regardless of how user typed out response (i.e DePosIt would become deposit), thx mike
     list = ["deposit", "withdraw", "display", "exit"]
     if userInput not in list:
         time.sleep(0.5)

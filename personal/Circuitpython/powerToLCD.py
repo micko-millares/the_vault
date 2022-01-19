@@ -1,4 +1,4 @@
-# Voltage to LCD Display Code
+# Voltage to LCD Display
 import time
 import board
 import digitalio
